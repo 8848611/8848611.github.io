@@ -30,6 +30,7 @@
 <body>
     <button id="btn">聚</button>
 	<button id="btn2">散</button>
+	<button id="btn3">跳转</button>
     <div id="demo">
 
     </div>
@@ -39,6 +40,7 @@
         var demo = document.getElementById('demo');
         var btn = document.getElementById('btn');
 		var btn2 = document.getElementById('btn2');
+	    var btn3 = document.getElementById('btn3');
         for(var i = 0;i < arr.length;i++){
             var span = document.createElement('span');
             span.innerHTML = arr[i];
@@ -71,6 +73,9 @@
                 })(i);
             }
         };
+	btn3.onclick = function(){
+		location.href = './example/demo.html';
+	};
     </script>
 </body>
 </html>
